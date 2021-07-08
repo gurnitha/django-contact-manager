@@ -393,9 +393,11 @@ This is my exercise based on the course: Django | Build &amp; Deploy Fully Featu
         modified:   apps/contact/views.py
 
 
+#### 8.2.39 DetailView for contact details
 
-
-
+        modified:   README.md
+        modified:   apps/contact/urls.py
+        modified:   apps/contact/views.py
 
 
 

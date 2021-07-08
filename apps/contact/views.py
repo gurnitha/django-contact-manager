@@ -24,10 +24,16 @@ class HomePageView(ListView):
 	context_object_name = 'contacts'	
 
 
-def detail(request, id):
-	context = {
-		'contact':get_object_or_404(Contact, pk=id)
-	}
-	return render(request, 'detail.html', context)
+# # Detailpage 1
+# def detail(request, id):
+# 	context = {
+# 		'contact':get_object_or_404(Contact, pk=id)
+# 	}
+# 	return render(request, 'detail.html', context)
 
 
+# Detailpage 2
+class ContactDetailView(DetailView):
+	template_name = 'detail.html'
+	model = Contact
+	context_object_name = 'contact'	
