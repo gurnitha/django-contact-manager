@@ -51,8 +51,14 @@ This is my exercise based on the course: Django | Build &amp; Deploy Fully Featu
         new file:   apps/contact/tests.py
         new file:   apps/contact/views.py
 
+#### 2.3.6 Register app to project
 
-
+        (venv3922) λ python manage.py check
+        System check identified no issues (0 silenced). 
+        
+        modified:   README.md
+        modified:   apps/contact/apps.py
+        modified:   config/settings.py
 
 
 
