@@ -309,10 +309,16 @@ This is my exercise based on the course: Django | Build &amp; Deploy Fully Featu
         modified:   apps/contact/views.py
         modified:   templates/index.html
 
+#### 6.4.31 (Part 1) Displying contacts objects in template
 
+        modified:   README.md
+        new file:   media/images/contact01.PNG
+        new file:   media/images/contact02.PNG
+        modified:   templates/index.html
 
-
-
+        NOTE:
+        Could not display the images due to the media file root
+        did not yet setup.
 
 
 
