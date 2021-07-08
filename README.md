@@ -234,7 +234,14 @@ This is my exercise based on the course: Django | Build &amp; Deploy Fully Featu
         modified:   apps/contact/models.py
         modified:   config/settings.py
 
+#### 5.9.24 Run migration and add some contacts        
 
+        modified:   README.md
+        modified:   apps/contact/admin.py
+        new file:   apps/contact/migrations/0001_initial.py
+        modified:   apps/contact/models.py
+        new file:   media/images/boy.png
+        new file:   media/images/girl.png
 
 
 
