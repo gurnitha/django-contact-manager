@@ -215,8 +215,11 @@ This is my exercise based on the course: Django | Build &amp; Deploy Fully Featu
         new file:   static/fonts/slick.woff
         modified:   templates/index.html
 
+#### 5.6.21 Template inheritance for home page
 
-
+        modified:   README.md
+        new file:   templates/base.html
+        modified:   templates/index.html
 
 
 
