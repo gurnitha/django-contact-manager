@@ -106,10 +106,14 @@ This is my exercise based on the course: Django | Build &amp; Deploy Fully Featu
         modified:   README.md
         modified:   config/settings.py
 
+#### 3.7.13 Run migration and create superuser
 
+        (venv3922) λ python manage.py makemigrations
+        No changes detected
+        (venv3922) λ python manage.py migrate 
+        (venv3922) λ python manage.py createsuperuser
 
-
-
+        modified:   README.md
 
 
 
