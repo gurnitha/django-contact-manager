@@ -17,6 +17,6 @@ def home(request):
 
 def detail(request, id):
 	context = {
-		'contacts':get_object_or_404(Contact, pk=id)
+		'contact':get_object_or_404(Contact, pk=id)
 	}
 	return render(request, 'detail.html', context)

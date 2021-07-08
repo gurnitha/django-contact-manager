@@ -364,9 +364,12 @@ This is my exercise based on the course: Django | Build &amp; Deploy Fully Featu
         modified:   apps/contact/views.py
         modified:   templates/shared/_card.html       
 
+#### 7.2.36 (Part 1) Showing Detail card in a template
 
-
-
+        modified:   README.md
+        modified:   apps/contact/views.py
+        modified:   templates/detail.html
+        modified:   templates/shared/_card.html
 
 
 
