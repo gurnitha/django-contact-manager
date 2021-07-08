@@ -371,7 +371,13 @@ This is my exercise based on the course: Django | Build &amp; Deploy Fully Featu
         modified:   templates/detail.html
         modified:   templates/shared/_card.html
 
+#### 7.3.37 (Part 2) Showing Detail card in a template - Adding conditional to the style
 
+        <div class="card my-2 mx-2 boy-card {% if 'detail' in request.path %}max-auto w-25{% endif %}">
+        # {{request.path}} ==> /detail/4
+          
+        modified:   README.md
+        modified:   templates/shared/_card.html
 
 
 
