@@ -222,7 +222,12 @@ This is my exercise based on the course: Django | Build &amp; Deploy Fully Featu
         modified:   templates/index.html
 
 
+#### 5.7.22 Creating search and detail pages
 
+        modified:   README.md
+        modified:   templates/detail.html
+        modified:   templates/index.html
+        modified:   templates/search.html
 
 
 
