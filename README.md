@@ -87,8 +87,12 @@ This is my exercise based on the course: Django | Build &amp; Deploy Fully Featu
 
        modified:   README.md 
 
+#### 3.4.10 Create .env file and setup environ
 
+       (venv3932) λ touch config\.env
 
+        modified:   .gitignore
+        modified:   README.md
 
 
 
