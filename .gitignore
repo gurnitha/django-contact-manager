@@ -2,6 +2,7 @@
 venv3922
 db.sqlite3
 .env
+_docs
 
 # Byte-compiled / optimized / DLL files
 __pycache__/

@@ -184,8 +184,22 @@ This is my exercise based on the course: Django | Build &amp; Deploy Fully Featu
         modified:   README.md
         modified:   config/settings.py
 
-
-
+#### 5.3.18 Adding static files and html templates
+ 
+        modified:   .gitignore
+        modified:   README.md
+        new file:   _docs/static/css/main.css
+        new file:   _docs/static/images/boy.png
+        new file:   _docs/static/images/girl.png
+        new file:   _docs/templates/detail.html
+        new file:   _docs/templates/index.html
+        new file:   _docs/templates/search.html
+        new file:   static/css/main.css
+        new file:   static/images/boy.png
+        new file:   static/images/girl.png
+        new file:   templates/detail.html
+        new file:   templates/index.html
+        new file:   templates/search.html
 
 
 
