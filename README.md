@@ -98,7 +98,13 @@ This is my exercise based on the course: Django | Build &amp; Deploy Fully Featu
 
         modified:   README.md
 
+#### 3.6.12 Use environ in settings
 
+       (venv3932) λ python manage.py check
+        System check identified no issues (0 silenced).
+
+        modified:   README.md
+        modified:   config/settings.py
 
 
 
