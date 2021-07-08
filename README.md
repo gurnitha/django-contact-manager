@@ -375,14 +375,22 @@ This is my exercise based on the course: Django | Build &amp; Deploy Fully Featu
 
         <div class="card my-2 mx-2 boy-card {% if 'detail' in request.path %}max-auto w-25{% endif %}">
         # {{request.path}} ==> /detail/4
-          
+
         modified:   README.md
         modified:   templates/shared/_card.html
 
 
 
+### ----------------------
+### 8. CLASS BASE VIEWS
+### ----------------------
 
 
+#### 8.1.38 ListView for Homepage
+
+        modified:   README.md
+        modified:   apps/contact/urls.py
+        modified:   apps/contact/views.py
 
 
 

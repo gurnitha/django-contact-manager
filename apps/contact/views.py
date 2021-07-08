@@ -2,17 +2,26 @@
 
 # Django modules
 from django.shortcuts import render, get_object_or_404
+from django.views.generic import ListView, DetailView
 
 # Django locals
 from apps.contact.models import Contact
 
 # Create your views here.
 
-def home(request):
-	context = {
-		'contacts':Contact.objects.all()
-	}
-	return render(request, 'index.html', context)
+# # Homepage 1
+# def home(request):
+# 	context = {
+# 		'contacts':Contact.objects.all()
+# 	}
+# 	return render(request, 'index.html', context)
+
+
+# Homepage 2
+class HomePageView(ListView):
+	template_name = 'index.html'
+	model = Contact 
+	context_object_name = 'contacts'	
 
 
 def detail(request, id):
@@ -20,3 +29,5 @@ def detail(request, id):
 		'contact':get_object_or_404(Contact, pk=id)
 	}
 	return render(request, 'detail.html', context)
+
+
