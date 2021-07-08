@@ -14,9 +14,12 @@ This is my exercise based on the course: Django | Build &amp; Deploy Fully Featu
 
         λ python -m venv venv3922
 
+#### 1.3.3 Install django
 
-
-
+        λ venv3922\scripts\activate
+        (venv3922) λ python -m pip install django
+        (venv3922) λ python -m pip install --upgrade pip
+        modified:   README.md
 
 
 
