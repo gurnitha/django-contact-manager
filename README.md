@@ -258,6 +258,12 @@ This is my exercise based on the course: Django | Build &amp; Deploy Fully Featu
         modified:   README.md
         modified:   apps/contact/admin.py
 
+#### 5.13.28 Rendering data from views to template
+
+        modified:   README.md
+        modified:   apps/contact/views.py
+        modified:   templates/index.html
+
 
 
 
