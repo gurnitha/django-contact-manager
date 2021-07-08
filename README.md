@@ -37,11 +37,19 @@ This is my exercise based on the course: Django | Build &amp; Deploy Fully Featu
         new file:   config/wsgi.py
         new file:   manage.py
 
+#### 2.2.5 Create django app 'apps/contact' 
 
+        (venv3922) λ mkdir apps\contact
+        (venv3922) λ python manage.py startapp contact apps\contact
 
-
-
-
+        modified:   README.md
+        new file:   apps/contact/__init__.py
+        new file:   apps/contact/admin.py
+        new file:   apps/contact/apps.py
+        new file:   apps/contact/migrations/__init__.py
+        new file:   apps/contact/models.py
+        new file:   apps/contact/tests.py
+        new file:   apps/contact/views.py
 
 
 
