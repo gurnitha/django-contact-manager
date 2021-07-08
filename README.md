@@ -253,8 +253,10 @@ This is my exercise based on the course: Django | Build &amp; Deploy Fully Featu
         modified:   README.md
         modified:   apps/contact/admin.py
 
+#### 5.12.27 Customizing List disply and filter in Admin panel
 
-
+        modified:   README.md
+        modified:   apps/contact/admin.py
 
 
 
