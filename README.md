@@ -294,11 +294,20 @@ This is my exercise based on the course: Django | Build &amp; Deploy Fully Featu
 
         modified:   README.md
 
+#### 6.3.30 Passing contacts objects to template
 
+        def home(request):
+                context = {
+                        'contacts':Contact.objects.all()
+                }
+                return render(request, 'index.html', context)
 
+        # The result
+        <QuerySet [<Contact: Rainy Jane>, <Contact: Joy Brown>]>
 
-
-
+        modified:   README.md
+        modified:   apps/contact/views.py
+        modified:   templates/index.html
 
 
 
