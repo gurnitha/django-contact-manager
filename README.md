@@ -94,7 +94,9 @@ This is my exercise based on the course: Django | Build &amp; Deploy Fully Featu
         modified:   .gitignore
         modified:   README.md
 
+#### 3.5.11 Setup .env file (adding the db credentials and SECRET_KEY)
 
+        modified:   README.md
 
 
 
