@@ -75,7 +75,11 @@ This is my exercise based on the course: Django | Build &amp; Deploy Fully Featu
         modified:   .gitignore
         modified:   README.md
 
+#### 3.2.8 Install django environ
 
+       (venv3932) λ pip install django-environ
+
+       modified:   README.md
 
 
 
