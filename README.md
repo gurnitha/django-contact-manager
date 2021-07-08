@@ -160,9 +160,9 @@ This is my exercise based on the course: Django | Build &amp; Deploy Fully Featu
 
 
 
-### -----------------------------------
-### 5. DJANGO MODEL, VIEW & TEMPLATE
-### -----------------------------------
+### ------------------------------------------
+### 5. DJANGO MODEL, VIEW, TEMPLATE & ADMIN
+### ------------------------------------------
 
 
 #### 5.1.16 Concept Model, View and Template
@@ -258,13 +258,20 @@ This is my exercise based on the course: Django | Build &amp; Deploy Fully Featu
         modified:   README.md
         modified:   apps/contact/admin.py
 
-#### 5.13.28 Rendering data from views to template
+
+
+### ------------------------------------------------------
+### 6. HOMEPAGE - RENDERING DATA FROM VIEWS TO TEMPLATE
+### ------------------------------------------------------
+
+
+#### 6.1.28 Rendering data from views to template
 
         modified:   README.md
         modified:   apps/contact/views.py
         modified:   templates/index.html
 
-#### 5.14.29 Jinja 2 Syntax 
+#### 6.2.29 Jinja 2 Syntax and modify README.md
 
         # 1. Basic configuration
         {% ... %} for statements
