@@ -127,6 +127,36 @@ This is my exercise based on the course: Django | Build &amp; Deploy Fully Featu
         new file:   requirements.txt
 
 
+#### 4.2.15 Current project's structures
+
+        .
+        |-- LICENSE
+        |-- README.md
+        |-- apps
+        |   `-- contact
+        |       |-- __init__.py
+        |       |-- __pycache__
+        |       |-- admin.py
+        |       |-- apps.py
+        |       |-- migrations
+        |       |-- models.py
+        |       |-- tests.py
+        |       `-- views.py
+        |-- config
+        |   |-- __init__.py
+        |   |-- __pycache__
+        |   |   |-- __init__.cpython-39.pyc
+        |   |   |-- settings.cpython-39.pyc
+        |   |   |-- urls.cpython-39.pyc
+        |   |   `-- wsgi.cpython-39.pyc
+        |   |-- asgi.py
+        |   |-- settings.py
+        |   |-- urls.py
+        |   `-- wsgi.py
+        |-- manage.py
+        |        - requirements.txt
+        `-- venv3922
+
 
 
 
