@@ -175,9 +175,14 @@ This is my exercise based on the course: Django | Build &amp; Deploy Fully Featu
         					    	|-- > Template
 
 
+#### 5.2.17 Setting up static file and template directories
 
+        'DIRS': [os.path.join(BASE_DIR, 'templates')],
+        STATIC_URL = '/static/'
+        STATICFILES_DIRS = [os.path.join(BASE_DIR, 'static')]
 
-
+        modified:   README.md
+        modified:   config/settings.py
 
 
 
