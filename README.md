@@ -117,6 +117,15 @@ This is my exercise based on the course: Django | Build &amp; Deploy Fully Featu
 
 
 
+### -----------------------
+### 4. PROJECT STRUCTURE
+### -----------------------
+
+#### 4.1.14 Create requirements.txt file
+
+        modified:   README.md
+        new file:   requirements.txt
+
 
 
 
