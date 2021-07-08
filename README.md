@@ -346,8 +346,23 @@ This is my exercise based on the course: Django | Build &amp; Deploy Fully Featu
 
 
 
+### ------------------
+### 7. DETAIL PAGE
+### ------------------
 
 
+#### 7.1.35 Getting individual Contact object from views
+
+        Step 1 - Showing the id of each object in admin panel from admin.py
+        Step 2 - Create url for detail contact
+        Step 3 - Create detail view function
+        Sept 4 - Add path to the anchor tag
+
+        modified:   README.md
+        modified:   apps/contact/admin.py
+        modified:   apps/contact/urls.py
+        modified:   apps/contact/views.py
+        modified:   templates/shared/_card.html       
 
 
 
