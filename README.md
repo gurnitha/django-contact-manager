@@ -248,7 +248,10 @@ This is my exercise based on the course: Django | Build &amp; Deploy Fully Featu
         modified:   README.md
         modified:   config/urls.py
 
+#### 5.11.26 Removing Group models from admin
 
+        modified:   README.md
+        modified:   apps/contact/admin.py
 
 
 
