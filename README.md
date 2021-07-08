@@ -81,7 +81,11 @@ This is my exercise based on the course: Django | Build &amp; Deploy Fully Featu
 
        modified:   README.md
 
+#### 3.3.9 Install PostgreSQL driver
 
+       (venv3932) λ python -m pip install psycopg2-binary==2.8.6
+
+       modified:   README.md 
 
 
 
