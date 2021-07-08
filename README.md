@@ -325,10 +325,15 @@ This is my exercise based on the course: Django | Build &amp; Deploy Fully Featu
         modified:   README.md
         modified:   config/urls.py
 
+#### 6.6.33 Setting up timezone and modify Contact model aby adding datetime
 
+        (venv3922) λ python manage.py makemigrations
+        (venv3922) λ python manage.py migrate
 
-
-
+        modified:   README.md
+        new file:   apps/contact/migrations/0002_alter_contact_date_added.py
+        modified:   apps/contact/models.py
+        modified:   config/settings.py
 
 
 
