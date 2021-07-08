@@ -168,11 +168,11 @@ This is my exercise based on the course: Django | Build &amp; Deploy Fully Featu
 #### 5.1.16 Concept Model, View and Template
 
 
-        							|-- > Model
-        							|
-        |USER|--- > URL -- > View --|
-        					    	|   
-        					    	|-- > Template
+                                        |-- > Model
+                                        |
+        |USER|--- > URL ---- > View ----|
+                                        |   
+                                        |-- > Template
 
 
 #### 5.2.17 Setting up static file and template directories
@@ -243,8 +243,10 @@ This is my exercise based on the course: Django | Build &amp; Deploy Fully Featu
         new file:   media/images/boy.png
         new file:   media/images/girl.png
 
+#### 5.10.25 Customizing Admin panel
 
-
+        modified:   README.md
+        modified:   config/urls.py
 
 
 
