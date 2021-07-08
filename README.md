@@ -320,8 +320,10 @@ This is my exercise based on the course: Django | Build &amp; Deploy Fully Featu
         Could not display the images due to the media file root
         did not yet setup.
 
+#### 6.5.32 (Part 2) Displying contacts objects in template (Difining media root)
 
-
+        modified:   README.md
+        modified:   config/urls.py
 
 
 
