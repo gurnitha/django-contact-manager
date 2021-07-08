@@ -264,9 +264,28 @@ This is my exercise based on the course: Django | Build &amp; Deploy Fully Featu
         modified:   apps/contact/views.py
         modified:   templates/index.html
 
+#### 5.14.29 Jinja 2 Syntax 
 
+        # 1. Basic configuration
+        {% ... %} for statements
+        {{ ... }} for expressions to print output in template
+        {# ... #} for comments
 
+        # 2. Conditional Rendering
+        {% if expression %}
+        ...
+        {% elif expression %}
+        ...
+        {% else %}
+        ...
+        {% endif %}
 
+        # 3. Looping using for loop
+        {% for item in items %}
+        ...
+        {% endfor %}
+
+        modified:   README.md
 
 
 
