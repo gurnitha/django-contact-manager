@@ -121,6 +121,7 @@ This is my exercise based on the course: Django | Build &amp; Deploy Fully Featu
 ### 4. PROJECT STRUCTURE
 ### -----------------------
 
+
 #### 4.1.14 Create requirements.txt file
 
         modified:   README.md
@@ -159,11 +160,19 @@ This is my exercise based on the course: Django | Build &amp; Deploy Fully Featu
 
 
 
+### -----------------------------------
+### 5. DJANGO MODEL, VIEW & TEMPLATE
+### -----------------------------------
 
 
+#### 5.1.16 Concept Model, View and Template
 
 
-
+        							|-- > Model
+        							|
+        |USER|--- > URL -- > View --|
+        					    	|   
+        					    	|-- > Template
 
 
 
