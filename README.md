@@ -208,7 +208,12 @@ This is my exercise based on the course: Django | Build &amp; Deploy Fully Featu
         modified:   apps/contact/views.py
         modified:   config/urls.py
 
+#### 5.5.20 Loading static files
 
+        modified:   README.md
+        ...
+        new file:   static/fonts/slick.woff
+        modified:   templates/index.html
 
 
 

@@ -1,105 +1,133 @@
+{% load static %}
+
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1, shrink-to-fit=no"
-    />
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8" />
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1, shrink-to-fit=no"
+  />
 
-    <!-- Bootstrap CSS -->
-    <link
-      rel="stylesheet"
-      href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
-    />
-    <!-- Custom CSS -->
-    <link rel="stylesheet" href="main.css" />
+  <!-- Bootstrap CSS -->
+  <link
+    rel="stylesheet"
+    href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
+  />
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="{% static 'css/main.css' %}" />
 
-    <!-- Fonts & Icons -->
-    <link
-      href="https://fonts.googleapis.com/css?family=Lato"
-      rel="stylesheet"
-    />
-    <link
-      rel="stylesheet"
-      href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"
-    />
-    <title>My Contacts</title>
-  </head>
-  <body>
-    <!-- Navbar -->
+  <!-- Fonts & Icons -->
+  <link
+    href="https://fonts.googleapis.com/css?family=Lato"
+    rel="stylesheet"
+  />
+  <link
+    rel="stylesheet"
+    href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"
+  />
 
-    <nav>
-      <a class="logo" href="/index.html">
-        <i class="fas fa-user-circle"></i>&nbsp;Contacts
-      </a>
-      <form class="form-inline my-2" action="search.html">
-        <input
-          class="form-control"
-          type="text"
-          placeholder="Find contacts..."
-        />
-        <button class="btn" type="submit"><i class="fas fa-search"></i></button>
-      </form>
-    </nav>
-    <!-- Navbar ends -->
-    <br />
+  <!-- Google font -->
+  <link href="https://fonts.googleapis.com/css?family=Hind:400,700" rel="stylesheet">
 
-    <!-- Main Section -->
-    <div class="container">
-      <h3 class="heading font-weight-light">Here are your contacts</h3>
-      <hr />
-    </div>
-    <div class="container main-part">
-      <!-- Card for details -->
-      <div class="card my-2 mx-2 boy-card">
-        <img src="https://placeimg.com/230/130/people" class="img-fluid" />
-        <div class="card-header">
-          <a href="detail.html" class="text-white header-link"
-            ><i class="fas fa-mars mr-2"></i> John Wood</a
-          >
-        </div>
-        <div class="card-body pb-0">
-          <p>
-            <i class="fas fa-at mr-2"></i>
-            <a href="mailto:samirphuyal65@gmail.com">johnwood@gmail.com</a>
-          </p>
-          <p>
-            <i class="fas fa-phone mr-2"></i>
-            <a href="tel:9001010100">9001010100</a>
-          </p>
-          <p><i class="fas fa-info-circle mr-2"></i> Friend</p>
-        </div>
+  <!-- Bootstrap -->
+  <link type="text/css" rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}" />
+
+  <!-- Slick -->
+  <link type="text/css" rel="stylesheet" href="{% static 'css/slick.css' %}" />
+  <link type="text/css" rel="stylesheet" href="{% static 'css/slick-theme.css' %}" />
+
+  <!-- nouislider -->
+  <link type="text/css" rel="stylesheet" href="{% static 'css/nouislider.min.css' %}" />
+
+  <!-- Font Awesome Icon -->
+  <link rel="stylesheet" href="{% static 'css/font-awesome.min.css' %}">
+
+  <!-- Custom stlylesheet -->
+  <link type="text/css" rel="stylesheet" href="{% static 'css/style.css' %}" />
+
+  <title>My Contacts</title>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav>
+    <a class="logo" href="/index.html">
+      <i class="fas fa-user-circle"></i>&nbsp;Contacts
+    </a>
+    <form class="form-inline my-2" action="search.html">
+      <input
+        class="form-control"
+        type="text"
+        placeholder="Find contacts..."
+      />
+      <button class="btn" type="submit"><i class="fas fa-search"></i></button>
+    </form>
+  </nav>
+  <!-- Navbar Ends -->
+
+  <br />
+
+  <!-- Header -->
+  <div class="container">
+    <h3 class="heading font-weight-light">Here are your contacts</h3>
+    <hr />
+  </div>
+  <!-- Header Ends -->
+
+  <!-- Content -->
+  <div class="container main-part">
+
+    <!-- Card for details -->
+    <div class="card my-2 mx-2 boy-card">
+      <img src="https://placeimg.com/230/130/people" class="img-fluid" />
+      <div class="card-header">
+        <a href="detail.html" class="text-white header-link"
+          ><i class="fas fa-mars mr-2"></i> John Wood</a
+        >
       </div>
-      <!-- Card for details ends -->
-
-      <div class="card my-2 mx-2 girl-card">
-        <img src="https://placeimg.com/230/130/people" class="img-fluid" />
-        <div class="card-header">
-          <a href="detail.html" class="text-white header-link"
-            ><i class="fas fa-venus mr-2"></i> June Pink</a
-          >
-        </div>
-        <div class="card-body pb-0">
-          <p>
-            <i class="fas fa-at mr-2"></i>
-            <a href="mailto:pinkjune@gmail.com">pinkjune@gmail.com</a>
-          </p>
-          <p>
-            <i class="fas fa-phone mr-2"></i>
-            <a href="tel:9819090909">9819090909</a>
-          </p>
-          <p><i class="fas fa-info-circle mr-2"></i> Friend</p>
-        </div>
+      <div class="card-body pb-0">
+        <p>
+          <i class="fas fa-at mr-2"></i>
+          <a href="mailto:samirphuyal65@gmail.com">johnwood@gmail.com</a>
+        </p>
+        <p>
+          <i class="fas fa-phone mr-2"></i>
+          <a href="tel:9001010100">9001010100</a>
+        </p>
+        <p><i class="fas fa-info-circle mr-2"></i> Friend</p>
       </div>
     </div>
-    <!-- Main Section ends-->
+    <!-- Card for details ends -->
 
-    <!-- footer -->
-    <footer class="mt-4 p-2">
-      <p class="text-center p-1 m-0">&copy; My Contacts 2019</p>
-    </footer>
-    <!-- footer ends -->
-  </body>
+    <div class="card my-2 mx-2 girl-card">
+      <img src="https://placeimg.com/230/130/people" class="img-fluid" />
+      <div class="card-header">
+        <a href="detail.html" class="text-white header-link"
+          ><i class="fas fa-venus mr-2"></i> June Pink</a
+        >
+      </div>
+      <div class="card-body pb-0">
+        <p>
+          <i class="fas fa-at mr-2"></i>
+          <a href="mailto:pinkjune@gmail.com">pinkjune@gmail.com</a>
+        </p>
+        <p>
+          <i class="fas fa-phone mr-2"></i>
+          <a href="tel:9819090909">9819090909</a>
+        </p>
+        <p><i class="fas fa-info-circle mr-2"></i> Friend</p>
+      </div>
+    </div>
+  </div>
+  <!-- Content Ends -->
+
+  <!-- Footer -->
+  <footer class="mt-4 p-2">
+    <p class="text-center p-1 m-0">&copy;2021 My Contacts Developed with full of <i style="color:white;" class="fa fa-heart-o" aria-hidden="true"></i> by <span style="padding:0 3px 0 3px; color:white; border:1px solid white;">ING AFTER 60</span></p>
+  </footer>
+  <!-- Footer ends -->
+
+</body>
 </html>
