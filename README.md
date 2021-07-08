@@ -201,9 +201,12 @@ This is my exercise based on the course: Django | Build &amp; Deploy Fully Featu
         new file:   templates/index.html
         new file:   templates/search.html
 
+#### 5.4.19 Rendering the home page 
 
-
-
+        modified:   README.md
+        new file:   apps/contact/urls.py
+        modified:   apps/contact/views.py
+        modified:   config/urls.py
 
 
 
