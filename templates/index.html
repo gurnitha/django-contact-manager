@@ -24,71 +24,14 @@
       <!-- 2. if contacts exists run for loop -->
       {% for contact in contacts %}
 
-        <!-- 3. check if contacts exists are male -->
-        {% if contact.gender == 'male' %}
-          <!-- Card for details -->
-          <div class="card my-2 mx-2 boy-card">
-            <img src="
-                {% if contact.image %}
-                  {{contact.image.url}}
-                {% else %}
-                  {% static 'images/boy.png' %}
-                {% endif %}
-              " class="img-fluid" />
-            <div class="card-header">
-              <a href="detail.html" class="text-white header-link"
-                ><i class="fas fa-mars mr-2"></i>{{contact.name}}</a
-              >
-            </div>
-            <div class="card-body pb-0">
-              <p>
-                <i class="fas fa-at mr-2"></i>
-                <a href="mailto:samirphuyal65@gmail.com">{{contact.email}}</a>
-              </p>
-              <p>
-                <i class="fas fa-phone mr-2"></i>
-                <a href="tel:{{contact.phone}}">{{contact.phone}}</a>
-              </p>
-              <p><i class="fas fa-info-circle mr-2"></i>{{contact.info}}</p>
-            </div>
-          </div>
-          <!-- Card for details ends -->
-
-        {% else %}  
-        <div class="card my-2 mx-2 girl-card">
-          <img src="
-                {% if contact.image %}
-                  {{contact.image.url}}
-                {% else %}
-                  {% static './images/girl.png' %}
-                {% endif %} 
-          " class="img-fluid" />
-          <div class="card-header">
-            <a href="detail.html" class="text-white header-link"
-              ><i class="fas fa-venus mr-2"></i>{{contact.name}}</a
-            >
-          </div>
-          <div class="card-body pb-0">
-            <p>
-              <i class="fas fa-at mr-2"></i>
-              <a href="mailto:pinkjune@gmail.com">{{contact.email}}</a>
-            </p>
-            <p>
-              <i class="fas fa-phone mr-2"></i>
-              <a href="tel:{{contact.phone}}">{{contact.phone}}</a>
-            </p>
-            <p><i class="fas fa-info-circle mr-2"></i>{{contact.info}}</p>
-          </div>
-        </div>        
-        {% endif %}
-        <!-- 3. end check if contacts exists: male or female -->
+        {% include "./shared/_card.html" %}
 
       {% endfor %}
       <!-- 2. end if contacts exists run for loop -->
 
     <!-- if contacts not exists -->
     {% else %}  
-    <p>No contact found.</p>
+    <p class="d-block font-weight-light m-2 heading">You have not save any contact yet!</p>
     {% endif %}
     <!-- 1. end if contacts not exists -->
 

@@ -12,7 +12,7 @@ from apps.contact.models import Contact
 class ContactAdmin(admin.ModelAdmin):
 	list_display  = ('name', 'gender', 'email', 'info', 'phone')
 	list_editable = ('info',)
-	list_per_page = 1
+	list_per_page = 6
 	search_fields = ('name', 'gender', 'email', 'info', 'phone')
 	list_filter   = ('gender', 'date_added')
 

@@ -335,7 +335,14 @@ This is my exercise based on the course: Django | Build &amp; Deploy Fully Featu
         modified:   apps/contact/models.py
         modified:   config/settings.py
 
+#### 6.7.34 Using include and add some more contacts
 
+        modified:   README.md
+        modified:   apps/contact/admin.py
+        new file:   media/images/barack_obama.jpg
+        ...
+        modified:   templates/index.html
+        new file:   templates/shared/_card.html
 
 
 
