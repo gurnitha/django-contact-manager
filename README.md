@@ -229,7 +229,10 @@ This is my exercise based on the course: Django | Build &amp; Deploy Fully Featu
         modified:   templates/index.html
         modified:   templates/search.html
 
+#### 5.8.23 Create Contact model and setup media files
 
+        modified:   apps/contact/models.py
+        modified:   config/settings.py
 
 
 
