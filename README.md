@@ -55,14 +55,25 @@ This is my exercise based on the course: Django | Build &amp; Deploy Fully Featu
 
         (venv3922) λ python manage.py check
         System check identified no issues (0 silenced). 
-        
+
         modified:   README.md
         modified:   apps/contact/apps.py
         modified:   config/settings.py
 
 
+### --------------
+### 3. DATABASE
+### --------------
 
 
+#### 3.1.7 Create postgres database
+
+        hp=# CREATE DATABASE django_contact_manager;
+        CREATE DATABASE
+        hp=#
+
+        modified:   .gitignore
+        modified:   README.md
 
 
 
