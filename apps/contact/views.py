@@ -98,6 +98,6 @@ def search(request):
 # CRUD: CreateView 
 class ContactCreateView(CreateView):
 	model = Contact
-	template_name = 'create.html'
+	template_name = 'crud/create.html'
 	fields = ['name', 'email', 'phone', 'info', 'gender', 'image']
 	success_url = '/'

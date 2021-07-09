@@ -483,6 +483,16 @@ This is my exercise based on the course: Django | Build &amp; Deploy Fully Featu
         modified:   README.md
         modified:   apps/contact/urls.py
 
+#### 10.4.48 Part 2 - CreateView: create create.html file and add form template
+
+        modified:   README.md
+        modified:   apps/contact/urls.py
+        modified:   apps/contact/views.py
+        new file:   media/images/main-product03.jpg
+        modified:   templates/base.html
+        new file:   templates/crud/create.html
+
+
 
 
 
