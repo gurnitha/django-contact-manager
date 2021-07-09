@@ -593,11 +593,15 @@ This is my exercise based on the course: Django | Build &amp; Deploy Fully Featu
         modified:   templates/base.html
         new file:   templates/registration/login.html
 
+#### 11.2.55 (Part 1) Setting up log out page
 
+       Steps:
 
+       1. In templates/registration create: logged_out.html file
+       2. Add template to it + link to login again
 
-
-
+        modified:   README.md
+        new file:   templates/registration/logged_out.html
 
 
 
