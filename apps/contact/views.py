@@ -32,7 +32,7 @@ from apps.contact.models import Contact
 # 	context_object_name = 'contacts'	
 
 
-# Homepage 3
+# Homepage 3 (to restrict access)
 class HomePageView(LoginRequiredMixin, ListView):
 	template_name = 'index.html'
 	model = Contact 
@@ -47,8 +47,14 @@ class HomePageView(LoginRequiredMixin, ListView):
 # 	return render(request, 'detail.html', context)
 
 
-# Detailpage 2
-class ContactDetailView(DetailView):
+# # Detailpage 2
+# class ContactDetailView(DetailView):
+# 	template_name = 'detail.html'
+# 	model = Contact
+# 	context_object_name = 'contact'	
+
+# Detailpage 3 (to restrict access)
+class ContactDetailView(LoginRequiredMixin, DetailView):
 	template_name = 'detail.html'
 	model = Contact
 	context_object_name = 'contact'	
@@ -109,8 +115,15 @@ def search(request):
 
 # -------------- CRUD VIEWS ----------------
 
-# CRUD: CreateView 
-class ContactCreateView(CreateView):
+# # CRUD: CreateView 1
+# class ContactCreateView(CreateView):
+# 	model = Contact
+# 	template_name = 'crud/create.html'
+# 	fields = ['name', 'email', 'phone', 'info', 'gender', 'image']
+# 	success_url = '/'
+
+# CRUD: CreateView 2 (to restrict access)
+class ContactCreateView(LoginRequiredMixin, CreateView):
 	model = Contact
 	template_name = 'crud/create.html'
 	fields = ['name', 'email', 'phone', 'info', 'gender', 'image']
@@ -125,8 +138,20 @@ class ContactCreateView(CreateView):
 # 	success_url = '/'
 
 
-# CRUD: UpdateView 2
-class ContactUpdateView(UpdateView):
+# # CRUD: UpdateView 2
+# class ContactUpdateView(UpdateView):
+# 	model = Contact
+# 	template_name = 'crud/update.html'
+# 	fields = ['name', 'email', 'phone', 'info', 'gender', 'image']
+
+# 	# After fullfiling and submitting the form
+# 	# redirect it to its own detail page
+# 	def form_valid(self, form):
+# 		instance = form.save()
+# 		return redirect('detail', instance.pk)
+
+# CRUD: UpdateView 3 (to restrict access)
+class ContactUpdateView(LoginRequiredMixin, UpdateView):
 	model = Contact
 	template_name = 'crud/update.html'
 	fields = ['name', 'email', 'phone', 'info', 'gender', 'image']
@@ -138,8 +163,15 @@ class ContactUpdateView(UpdateView):
 		return redirect('detail', instance.pk)
 
 
-# CRUD: DeleteView 
-class ContactDeleteView(DeleteView):
+# # CRUD: DeleteView 1
+# class ContactDeleteView(DeleteView):
+# 	model = Contact
+# 	template_name = 'crud/delete.html'
+# 	success_url = '/'
+
+
+# CRUD: DeleteView 2 (to restrict access)
+class ContactDeleteView(LoginRequiredMixin, DeleteView):
 	model = Contact
 	template_name = 'crud/delete.html'
 	success_url = '/'

@@ -664,14 +664,21 @@ This is my exercise based on the course: Django | Build &amp; Deploy Fully Featu
 
         modified:   README.md
         modified:   apps/contact/views.py
-        
+
         NOTE:)       
 
+#### 11.6.59 (Part 2) Making views to require login to access - Restrict user access to ContactDetailView, ContactCreateView, and ContactUpdateView, ContactDeleteView 
 
+        Steps: 
+        1. Repeat step in #### 11.5.58 (Part 1)
 
+        modified:   README.md
+        modified:   apps/contact/views.py
 
+        NOTE:)   
 
-
+        modified:   README.md
+        modified:   apps/contact/views.py
 
 
 
