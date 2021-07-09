@@ -648,9 +648,24 @@ This is my exercise based on the course: Django | Build &amp; Deploy Fully Featu
         modified:   templates/base.html
         new file:   templates/registration/signup.html
 
+#### 11.5.58 (Part 1) Making views to require login to access - Restrict user access to ListView (Homepage)
 
+        Steps: 
+        1. Import LoginRequiredMixin
+        from django.contrib.auth.mixins import LoginRequiredMixin
+        2. Use LoginRequiredMixin in HomePageView
+        # Homepage 3
+        class HomePageView(LoginRequiredMixin, ListView):
+                template_name = 'index.html'
+                model = Contact 
+                context_object_name = 'contacts'        
+        3. Make sure that settings.py has this
+        LOGIN_URL = 'login' 
 
-
+        modified:   README.md
+        modified:   apps/contact/views.py
+        
+        NOTE:)       
 
 
 

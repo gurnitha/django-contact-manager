@@ -10,6 +10,7 @@ from django.views.generic.edit import (
 			DeleteView
 )
 from django.contrib.auth.forms import UserCreationForm
+from django.contrib.auth.mixins import LoginRequiredMixin
 
 # Django locals
 from apps.contact.models import Contact
@@ -24,8 +25,15 @@ from apps.contact.models import Contact
 # 	return render(request, 'index.html', context)
 
 
-# Homepage 2
-class HomePageView(ListView):
+# # Homepage 2
+# class HomePageView(ListView):
+# 	template_name = 'index.html'
+# 	model = Contact 
+# 	context_object_name = 'contacts'	
+
+
+# Homepage 3
+class HomePageView(LoginRequiredMixin, ListView):
 	template_name = 'index.html'
 	model = Contact 
 	context_object_name = 'contacts'	
