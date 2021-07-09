@@ -451,9 +451,12 @@ This is my exercise based on the course: Django | Build &amp; Deploy Fully Featu
 
         NEXT> Todo multiple searches 
 
+#### 9.5.44 Using Q method to do complex search query
 
+        modified:   README.md
+        modified:   apps/contact/views.py
 
-
+        NOTE:)
 
 
 
