@@ -39,12 +39,34 @@ class ContactDetailView(DetailView):
 	context_object_name = 'contact'	
 
 
-# Searchpage
+# # Searchpage 1
+# def search(request):
+# 	context = {
+# 		'search_term':search_term
+# 	}
+# 	return render(request, 'search.html', context)
+
+
+# # Searchpage 2
+# def search(request):
+# 	if request.GET:
+# 		search_term = request.GET['search_term']
+# 		context = {
+# 			'search_term':search_term
+# 		}
+# 		return render(request, 'search.html', context)
+# 	else:
+# 		return redirect('home')	
+
+
+# Searchpage 3
 def search(request):
 	if request.GET:
 		search_term = request.GET['search_term']
+		search_result = Contact.objects.filter(name__icontains=search_term)
 		context = {
-			'search_term':search_term
+			'search_term':search_term,
+			'contacts':search_result
 		}
 		return render(request, 'search.html', context)
 	else:

@@ -439,9 +439,17 @@ This is my exercise based on the course: Django | Build &amp; Deploy Fully Featu
 
         NOTE:)
 
+#### 9.4.43 Filtering objects containing search term and displaying in search page
 
+        modified:   README.md
+        modified:   apps/contact/views.py
+        modified:   templates/search.html
 
+        NOTE:
+        . This only search by name.
+        . Can not do, ie: search by email, or phone
 
+        NEXT> Todo multiple searches 
 
 
 
