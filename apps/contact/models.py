@@ -19,5 +19,9 @@ class Contact(models.Model):
 	image = models.ImageField(upload_to='images/', blank=True)
 	date_added = models.DateTimeField(default=datetime.now)
 
+	class Meta: 
+		ordering = ['-id']
+
 	def __str__(self):
 		return self.name
+

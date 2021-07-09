@@ -512,8 +512,15 @@ This is my exercise based on the course: Django | Build &amp; Deploy Fully Featu
         modified:   config/settings.py
         modified:   templates/crud/create.html
 
+#### 10.6.50 (Part 2) Styling our forms with crispy forms - Make contacts LIFO
 
+        class Contact(models.Model):
+                ...
+                class Meta: 
+                        ordering = ['-id']
 
+        modified:   README.md
+        modified:   apps/contact/models.py
 
 
 
