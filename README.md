@@ -492,11 +492,25 @@ This is my exercise based on the course: Django | Build &amp; Deploy Fully Featu
         modified:   templates/base.html
         new file:   templates/crud/create.html
 
+#### 10.5.49 (Part 1) Styling our forms with crispy forms
 
+        https://django-crispy-forms.readthedocs.io/en/latest/install.html
 
+        Steps: intall django crispy-forms:
 
+        1. (venv3922) λ pip install django-crispy-forms
+        2. # settings.py /INSTALLED_APPS as Third party apps
+           'crispy_forms',
+        3. # settings.py Crispy forms
+           CRISPY_TEMPLATE_PACK = 'bootstrap4'
+        4. Load crispy forms 
+           {% load crispy_forms_tags %}
+        5. In the form 
+           {{form|crispy}}
 
-
+        modified:   README.md
+        modified:   config/settings.py
+        modified:   templates/crud/create.html
 
 
 
