@@ -4,6 +4,7 @@
 from django.shortcuts import render, get_object_or_404, redirect
 from django.views.generic import ListView, DetailView
 from django.db.models import Q
+from django.views.generic.edit import CreateView
 
 # Django locals
 from apps.contact.models import Contact
@@ -91,3 +92,12 @@ def search(request):
 		return render(request, 'search.html', context)
 	else:
 		return redirect('home')	
+
+
+
+# CRUD: CreateView 
+class ContactCreateView(CreateView):
+	model = Contact
+	template_name = 'create.html'
+	fields = ['name', 'email', 'phone', 'info', 'gender', 'image']
+	success_url = '/'

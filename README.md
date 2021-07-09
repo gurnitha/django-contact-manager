@@ -473,9 +473,10 @@ This is my exercise based on the course: Django | Build &amp; Deploy Fully Featu
         modified:   templates/base.html
         modified:   templates/detail.html
 
+#### 10.2.46 Part 1 - CreateView: Using CBV to create class ContactCreateView
 
-
-
+        modified:   README.md
+        modified:   apps/contact/views.py
 
 
 
