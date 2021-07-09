@@ -522,8 +522,17 @@ This is my exercise based on the course: Django | Build &amp; Deploy Fully Featu
         modified:   README.md
         modified:   apps/contact/models.py
 
+#### 10.7.51 Part 1 - UpdateView: Create Views, Url, Template and make link to it from detail page
 
+        modified:   README.md
+        modified:   apps/contact/urls.py
+        modified:   apps/contact/views.py
+        new file:   templates/crud/update.html
+        modified:   templates/detail.html
 
+        NOTE:
+        . Currently it redirect to home page
+        . Next> redirect to detail contact
 
 
 

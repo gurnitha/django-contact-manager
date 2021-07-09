@@ -4,7 +4,7 @@
 from django.shortcuts import render, get_object_or_404, redirect
 from django.views.generic import ListView, DetailView
 from django.db.models import Q
-from django.views.generic.edit import CreateView
+from django.views.generic.edit import CreateView, UpdateView
 
 # Django locals
 from apps.contact.models import Contact
@@ -94,6 +94,7 @@ def search(request):
 		return redirect('home')	
 
 
+# -------------- CRUD VIEWS ----------------
 
 # CRUD: CreateView 
 class ContactCreateView(CreateView):
@@ -101,3 +102,12 @@ class ContactCreateView(CreateView):
 	template_name = 'crud/create.html'
 	fields = ['name', 'email', 'phone', 'info', 'gender', 'image']
 	success_url = '/'
+
+
+# CRUD: UpdateView 
+class ContactUpdateView(UpdateView):
+	model = Contact
+	template_name = 'crud/update.html'
+	fields = ['name', 'email', 'phone', 'info', 'gender', 'image']
+	success_url = '/'
+
