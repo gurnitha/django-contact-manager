@@ -4,7 +4,11 @@
 from django.shortcuts import render, get_object_or_404, redirect
 from django.views.generic import ListView, DetailView
 from django.db.models import Q
-from django.views.generic.edit import CreateView, UpdateView
+from django.views.generic.edit import (
+			CreateView, 
+			UpdateView,
+			DeleteView
+)
 
 # Django locals
 from apps.contact.models import Contact
@@ -123,3 +127,10 @@ class ContactUpdateView(UpdateView):
 	def form_valid(self, form):
 		instance = form.save()
 		return redirect('detail', instance.pk)
+
+
+# CRUD: DeleteView 
+class ContactDeleteView(DeleteView):
+	model = Contact
+	template_name = 'crud/delete.html'
+	success_url = '/'

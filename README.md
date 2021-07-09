@@ -541,7 +541,13 @@ This is my exercise based on the course: Django | Build &amp; Deploy Fully Featu
 
         NOTE:) 
 
+#### 10.9.53 DeleteView
 
+        modified:   apps/contact/urls.py
+        modified:   apps/contact/views.py
+        new file:   templates/crud/delete.html
+        modified:   templates/crud/update.html
+        modified:   templates/detail.html
 
 
 
