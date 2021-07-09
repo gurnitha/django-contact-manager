@@ -694,7 +694,17 @@ This is my exercise based on the course: Django | Build &amp; Deploy Fully Featu
         modified:   README.md
         modified:   apps/contact/views.py
 
+#### 11.8.61 (Part 4) Making views to require login to access - Keeping search value in search box
 
+
+        <form ...
+          <input
+             ...
+             name="search_term"
+             value="{{search_term}}" # <--- here
+
+        modified:   README.md
+        modified:   templates/base.html
 
 
 
