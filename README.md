@@ -413,13 +413,24 @@ This is my exercise based on the course: Django | Build &amp; Deploy Fully Featu
         modified:   apps/contact/views.py
         modified:   templates/base.html
 
+#### 9.2.41 (Part 1) Passing data from template to view
 
+        modified:   README.md
+        modified:   apps/contact/views.py
+        modified:   templates/base.html
+        modified:   templates/search.html
 
+        Note:
+        . It return error if no value passing to search
+        . See the error bellow:
 
+        --> search for obama
+        http://127.0.0.1:8000/searc/?search_term=obama
+        --> http://127.0.0.1:8000/searc/
+        UnboundLocalError at /searc/
+        local variable 'search_term' referenced before assignment
 
-
-
-
+        Next: solving the error
 
 
 

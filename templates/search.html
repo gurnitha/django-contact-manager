@@ -1,14 +1,14 @@
 <!-- templates/search.html -->
 {% extends "base.html" %}
 
-{% block title %} Search {% endblock title %}
+{% block title %} Search results for {{search_term}} {% endblock title %}
 
 
 {% block content %}
 
     <!-- Main Section -->
     <div class="container">
-      <h3 class="heading font-weight-light">Search results for "friend"</h3>
+      <h3 class="heading font-weight-light">Search results for "{{search_term}}"</h3>
       <hr />
     </div>
 

@@ -41,7 +41,9 @@ class ContactDetailView(DetailView):
 
 # Searchpage
 def search(request):
+	if request.GET:
+		search_term = request.GET['search_term']
 	context = {
-
+		'search_term':search_term
 	}
 	return render(request, 'search.html', context)
