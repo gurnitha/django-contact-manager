@@ -534,8 +534,12 @@ This is my exercise based on the course: Django | Build &amp; Deploy Fully Featu
         . Currently it redirect to home page
         . Next> redirect to detail contact
 
+#### 10.8.52 Part 2 - UpdateView: Redirect to contact detail page
 
+        modified:   README.md
+        modified:   apps/contact/views.py
 
+        NOTE:) 
 
 
 

@@ -104,10 +104,22 @@ class ContactCreateView(CreateView):
 	success_url = '/'
 
 
-# CRUD: UpdateView 
+# # CRUD: UpdateView 1
+# class ContactUpdateView(UpdateView):
+# 	model = Contact
+# 	template_name = 'crud/update.html'
+# 	fields = ['name', 'email', 'phone', 'info', 'gender', 'image']
+# 	success_url = '/'
+
+
+# CRUD: UpdateView 2
 class ContactUpdateView(UpdateView):
 	model = Contact
 	template_name = 'crud/update.html'
 	fields = ['name', 'email', 'phone', 'info', 'gender', 'image']
-	success_url = '/'
 
+	# After fullfiling and submitting the form
+	# redirect it to its own detail page
+	def form_valid(self, form):
+		instance = form.save()
+		return redirect('detail', instance.pk)
