@@ -603,6 +603,25 @@ This is my exercise based on the course: Django | Build &amp; Deploy Fully Featu
         modified:   README.md
         new file:   templates/registration/logged_out.html
 
+#### 11.3.56 (Part 2) Setting up log out page: showing/hiding menu log in and log out in navbar
+
+        # In navbar, add login and logout with conditional
+
+        {% if request.user.is_authenticated %}
+          <!-- if user is authenticated -->
+          <a href="{% url 'logout' %}" class="mr-4 text-white">
+            <i class="fas fa-sign-in-alt"></i>&nbsp; Log out
+          </a> 
+        {% else %}
+          <!-- if user is not authenticated -->
+          <a href="{% url 'login' %}" class="mr-4 text-white">
+            <i class="fas fa-sign-in-alt"></i>&nbsp; Log in
+          </a>  
+        {% endif %}
+
+        modified:   README.md
+        modified:   templates/base.html
+
 
 
 
