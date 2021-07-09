@@ -9,6 +9,7 @@ from django.views.generic.edit import (
 			UpdateView,
 			DeleteView
 )
+from django.contrib.auth.forms import UserCreationForm
 
 # Django locals
 from apps.contact.models import Contact
@@ -134,3 +135,12 @@ class ContactDeleteView(DeleteView):
 	model = Contact
 	template_name = 'crud/delete.html'
 	success_url = '/'
+
+
+# -------------- AUTHENTICATION ----------------
+
+# Signup
+class SignUpView(CreateView):
+	form_class = UserCreationForm
+	template_name = 'registration/signup.html'
+	success_url = 'home'

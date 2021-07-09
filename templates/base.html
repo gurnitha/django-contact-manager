@@ -47,16 +47,20 @@
       <!-- if user is authenticated -->
       <a href="{% url 'logout' %}" class="mr-4 text-white">
         <i class="fas fa-sign-in-alt"></i>&nbsp; Log out
+      </a>
+      <a href="{% url 'create' %}" class="mr-4 text-white">
+        <i class="fas fa-plus"></i>&nbsp; Add Contact
       </a> 
       {% else %}
       <!-- if user is not authenticated -->
       <a href="{% url 'login' %}" class="mr-4 text-white">
         <i class="fas fa-sign-in-alt"></i>&nbsp; Log in
+      </a>
+      <a href="{% url 'signup' %}" class="mr-4 text-white">
+        <i class="fas fa-user-plus"></i>&nbsp; Sign up
       </a>  
       {% endif %}
-      <a href="{% url 'create' %}" class="mr-4 text-white">
-        <i class="fas fa-plus"></i>&nbsp; Add Contact
-      </a>
+      
     </p>
     <form class="form-inline my-2" action="{% url 'search' %}" method="GET">
       <input

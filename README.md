@@ -622,9 +622,31 @@ This is my exercise based on the course: Django | Build &amp; Deploy Fully Featu
         modified:   README.md
         modified:   templates/base.html
 
+#### 11.4.57 Creating Sign up functionality
 
+        Steps:
 
+        1. from django.contrib.auth.forms import UserCreationForm
+        2. Create SignUpView
+        # Signup
+        class SignUpView(CreateView):
+                form_class = UserCreationForm
+                template_name = 'registration/signup.html'
+                success_url = 'home'
+        3. Create url
+        path('signup/', views.SignUpView.as_view(), name="signup"),
+        4. In templates/registration create: signup.html
+        5. Add template to it (use login template)
+        6. Add sign up menu in navbar
+        7. Hide add contact menu if user is not login
 
+        Note:)
+
+        modified:   README.md
+        modified:   apps/contact/urls.py
+        modified:   apps/contact/views.py
+        modified:   templates/base.html
+        new file:   templates/registration/signup.html
 
 
 
