@@ -401,11 +401,17 @@ This is my exercise based on the course: Django | Build &amp; Deploy Fully Featu
 
 
 
+### --------------------------
+### 9. SEARCH FUNCTIONALITY
+### --------------------------
 
 
+#### 9.1.40 Setting up search url and views
 
-
-
+        modified:   README.md
+        modified:   apps/contact/urls.py
+        modified:   apps/contact/views.py
+        modified:   templates/base.html
 
 
 
