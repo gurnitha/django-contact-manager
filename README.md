@@ -551,18 +551,47 @@ This is my exercise based on the course: Django | Build &amp; Deploy Fully Featu
 
 
 
+### ----------------------
+### 11. AUTHENTICATION 
+### ----------------------
 
 
+#### 11.1.54 Setting up login page
 
+        Steps:
+        1. Use 'django.contrib.auth' to create urls
+           > path('', include('django.contrib.auth.urls')),
+        
+        # By doing so, we have ways to log in, log out and make more of authentication features. It means that it has its own urls and views set up for those authentication stuff.          
 
+        2. Create a new folder: 'templates/registration'
+        3. Create a new file: 'templates/registration/login.html'
+           --> user visits: http://127.0.0.1:8000/login/
+        4. Add login template (use template in create.html)
+        5. Create LOGIN_URL, LOGOUT_URL, and LOGIN_REDIRECT_URL in settings.py:            
 
+        # AUTHENTICATION
+        LOGIN_URL = 'login'
+        LOGOUT_URL = 'logout'
+        LOGIN_REDIRECT_URL = 'home'
 
+        6. In navbar: create menu login
 
+        <a href="{% url 'login' %}" class="mr-4 text-white">
+          <i class="fas fa-sign-in-alt"></i>&nbsp; Login
+        </a>
+        
+        Note: 'login' defined in settings.py (line:574)
 
+        7. Refresh the page, and try to login (http://127.0.0.1:8000/login/)
 
+        DONE:)
 
-
-
+        modified:   README.md
+        modified:   config/settings.py
+        modified:   config/urls.py
+        modified:   templates/base.html
+        new file:   templates/registration/login.html
 
 
 
