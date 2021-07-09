@@ -680,9 +680,19 @@ This is my exercise based on the course: Django | Build &amp; Deploy Fully Featu
         modified:   README.md
         modified:   apps/contact/views.py
 
+#### 11.7.60 (Part 3) Making views to require login to access - Restricting access to search
 
+        Steps:
 
+        1. Import decorator login_required 
+        from django.contrib.auth.decorators import login_required
+        2. Use decorator in search view function
+        @login_required
+        def search(request):
+        ... 
 
+        modified:   README.md
+        modified:   apps/contact/views.py
 
 
 

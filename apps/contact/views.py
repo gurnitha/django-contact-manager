@@ -11,6 +11,7 @@ from django.views.generic.edit import (
 )
 from django.contrib.auth.forms import UserCreationForm
 from django.contrib.auth.mixins import LoginRequiredMixin
+from django.contrib.auth.decorators import login_required
 
 # Django locals
 from apps.contact.models import Contact
@@ -94,7 +95,27 @@ class ContactDetailView(LoginRequiredMixin, DetailView):
 # 		return redirect('home')	
 
 
-# Searchpage 4
+# # Searchpage 4
+# def search(request):
+# 	if request.GET:
+# 		search_term = request.GET['search_term']
+# 		search_result = Contact.objects.filter(
+# 			Q(name__icontains=search_term) |
+# 			Q(email__icontains=search_term) |
+# 			Q(info__icontains=search_term) |
+# 			Q(phone__iexact=search_term)
+# 		)
+# 		context = {
+# 			'search_term':search_term,
+# 			'contacts':search_result
+# 		}
+# 		return render(request, 'search.html', context)
+# 	else:
+# 		return redirect('home')	
+
+
+# Searchpage 5 (to restrict access)
+@login_required
 def search(request):
 	if request.GET:
 		search_term = request.GET['search_term']
