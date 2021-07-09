@@ -1,7 +1,7 @@
 # apps/contact/urls.py
 
 # Django modules
-from django.shortcuts import render, get_object_or_404
+from django.shortcuts import render, get_object_or_404, redirect
 from django.views.generic import ListView, DetailView
 
 # Django locals
@@ -43,7 +43,9 @@ class ContactDetailView(DetailView):
 def search(request):
 	if request.GET:
 		search_term = request.GET['search_term']
-	context = {
-		'search_term':search_term
-	}
-	return render(request, 'search.html', context)
+		context = {
+			'search_term':search_term
+		}
+		return render(request, 'search.html', context)
+	else:
+		return redirect('home')	

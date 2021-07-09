@@ -432,6 +432,12 @@ This is my exercise based on the course: Django | Build &amp; Deploy Fully Featu
 
         Next: solving the error
 
+#### 9.3.42 (Part 2) Passing data from template to view - Solving the error with redirect method
+
+        modified:   README.md
+        modified:   apps/contact/views.py
+
+        NOTE:)
 
 
 
