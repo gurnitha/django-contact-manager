@@ -460,6 +460,19 @@ This is my exercise based on the course: Django | Build &amp; Deploy Fully Featu
 
 
 
+### -------------------------------------------
+### 10. CRUD FUNCTIONALITY FROM THE FRONTEND 
+### -------------------------------------------
+
+
+#### 10.1.45 Tweaking/Setting up the template
+
+        modified:   README.md
+        modified:   static/css/main.css
+        new file:   static/images/contact-icon.png
+        modified:   templates/base.html
+        modified:   templates/detail.html
+
 
 
 
