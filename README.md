@@ -478,8 +478,10 @@ This is my exercise based on the course: Django | Build &amp; Deploy Fully Featu
         modified:   README.md
         modified:   apps/contact/views.py
 
+#### 10.3.47 Part 2 - CreateView: Create url 
 
-
+        modified:   README.md
+        modified:   apps/contact/urls.py
 
 
 

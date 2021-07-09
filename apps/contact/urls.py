@@ -12,4 +12,5 @@ urlpatterns = [
     # path('detail/<int:id>/', views.detail, name="detail")
     path('detail/<int:pk>/', views.ContactDetailView.as_view(), name="detail"),
     path('searc/', views.search, name="search"),
+    path('contact/create', views.ContactCreateView.as_view, name="create"),
 ]
