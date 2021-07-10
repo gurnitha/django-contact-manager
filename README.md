@@ -708,7 +708,22 @@ This is my exercise based on the course: Django | Build &amp; Deploy Fully Featu
 
 
 
+### ------------------------------------
+### 12. AUTHENTICATION MULTIPLE USERS  
+### ------------------------------------
 
+#### 12.1.62 Adding ForeignKey ModelField
+
+        modified:   README.md
+        modified:   apps/contact/admin.py
+        modified:   apps/contact/migrations/0001_initial.py
+        deleted:    apps/contact/migrations/0002_alter_contact_date_added.py
+        modified:   apps/contact/models.py
+        modified:   apps/contact/views.py
+        new file:   media/images/SushantSinghRajput.PNG
+        ...
+        new file:   media/images/taylor_swift_uaIuANk.jpg
+        modified:   templates/base.html
 
 
 

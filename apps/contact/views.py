@@ -12,6 +12,7 @@ from django.views.generic.edit import (
 from django.contrib.auth.forms import UserCreationForm
 from django.contrib.auth.mixins import LoginRequiredMixin
 from django.contrib.auth.decorators import login_required
+from django.urls import reverse_lazy
 
 # Django locals
 from apps.contact.models import Contact
@@ -143,12 +144,12 @@ def search(request):
 # 	fields = ['name', 'email', 'phone', 'info', 'gender', 'image']
 # 	success_url = '/'
 
-# CRUD: CreateView 2 (to restrict access)
-class ContactCreateView(LoginRequiredMixin, CreateView):
-	model = Contact
-	template_name = 'crud/create.html'
-	fields = ['name', 'email', 'phone', 'info', 'gender', 'image']
-	success_url = '/'
+# # CRUD: CreateView 2 (to restrict access)
+# class ContactCreateView(LoginRequiredMixin, CreateView):
+# 	model = Contact
+# 	template_name = 'crud/create.html'
+# 	fields = ['name', 'email', 'phone', 'info', 'gender', 'image']
+# 	success_url = '/'
 
 
 # # CRUD: UpdateView 1
@@ -200,8 +201,31 @@ class ContactDeleteView(LoginRequiredMixin, DeleteView):
 
 # -------------- AUTHENTICATION ----------------
 
-# Signup
+# # Signup 1
+# class SignUpView(CreateView):
+# 	form_class = UserCreationForm
+# 	template_name = 'registration/signup.html'
+# 	success_url = 'home'
+
+
+
+# ---- AUTHENTICATION MULTIPLE USERS --------
+
+# Signup 2 (multiple user)
 class SignUpView(CreateView):
 	form_class = UserCreationForm
 	template_name = 'registration/signup.html'
-	success_url = 'home'
+	success_url = reverse_lazy('home')
+
+
+# CRUD: CreateView 3 (to restrict access + multi user)
+class ContactCreateView(LoginRequiredMixin, CreateView):
+	model = Contact
+	template_name = 'crud/create.html'
+	fields = ['name', 'email', 'phone', 'info', 'gender', 'image']
+
+	def form_valid(self, form):
+		instance = form.save(commit=False)
+		instance.manager = self.request.user 
+		instance.save()
+		return redirect('home')

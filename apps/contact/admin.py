@@ -11,6 +11,7 @@ from apps.contact.models import Contact
 # Customizing list disply in admin panel
 class ContactAdmin(admin.ModelAdmin):
 	list_display  = ('id', 'name', 'gender', 'email', 'info', 'phone')
+	list_display_links = ('id', 'name')
 	list_editable = ('info',)
 	list_per_page = 6
 	search_fields = ('name', 'gender', 'email', 'info', 'phone')
